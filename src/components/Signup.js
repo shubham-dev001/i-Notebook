@@ -4,7 +4,9 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 
 const Signup = (props) => {
-  const URL = "http://localhost:5000/api/authentication"
+  // const URL = "http://localhost:5000/api/authentication"
+  const URL = " https://i-notebook-backend-3dil.onrender.com/api/authentication"
+ 
  const [credentials, setCredentials] = useState({ name: "", email: "", password: "" });
   let navigate = useNavigate();
 
@@ -40,9 +42,9 @@ const Signup = (props) => {
 
   return (
     <div className='container '>
-      <form onSubmit={handleSubmit} className=' container card' style={{ width: 450, height: 520 }}>
+      <form onSubmit={handleSubmit} className=' container card' style={{ width: 300, height: 450 }}>
         <div className="mb-3 ">
-          <h2 className='text-center'>Signup</h2>
+          <h2 className='text-center my-2'>Signup</h2>
           <label htmlFor="name" className="form-label">Name</label>
           <input type="text" className="form-control" name="name" onChange={onChange} id="name" required />
         </div>

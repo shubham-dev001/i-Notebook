@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate,Link } from 'react-router-dom';
 
 const Login = (props) => {
-    const URL = "http://localhost:5000/api/authentication";
+    const URL = " https://i-notebook-backend-3dil.onrender.com/api/authentication";
     const [credentials, setCredentials] = useState({ email: "", password: "" });
     let navigate = useNavigate();
 
@@ -52,9 +52,9 @@ const Login = (props) => {
 
     return (
         <div className='container'>
-            <form onSubmit={handleSubmit} className=' container card' style={{ width: 450, height: 350 }}>
+            <form onSubmit={handleSubmit} className=' container card' style={{ width: 300, height: 360 }}>
                 <div className="mb-3">
-                    <h2 className='text-center'>Login</h2>
+                    <h2 className='text-center my-2'>Login</h2>
                     <label htmlFor="email" className="form-label">Email address</label>
                     <input
                         type="email"

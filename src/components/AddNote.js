@@ -60,12 +60,10 @@ const AddNote = (props) => {
 
                 <div className="mb-3">
                     <label htmlFor="description" className="form-label">Description</label>
-
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="description"
+                    <textarea
                         name="description"
+                        id="description"
+                        className="form-control"
                         value={note.description}
                         onChange={onChange}
                         minLength={5}
